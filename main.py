@@ -14,8 +14,8 @@ def main():
     mass_skin = float(input(ru.MASS_SKIN))
     volume_l = float(input(ru.VOLUME_L))
     t_outside_c = float(input(ru.T_OUTSIDE_C))
-    pressure = 10**5
-    molar_mass = 29 * (10**(-3))
+    pressure = 10 ** 5
+    molar_mass = 29 * (10 ** (-3))
     gas_constant = 8.31
     specific_heat = 1_000
     t_outside_k = t_outside_c + 273.15
