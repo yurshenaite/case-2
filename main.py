@@ -26,4 +26,14 @@ def main():
     t_inside_f = t_outside_c * 9/5 + 32
     mass_air = pressure * molar_mass * volume_m3 / gas_constant * t_outside_k
     delta_t = t_inside_k - t_outside_k
-    quanity_heat = specific_heat * mass_air * delta_t
+    quantity_heat = specific_heat * mass_air * delta_t
+        
+    print(f'{ru.T_INSIDE_C} = {round(t_inside_c)}')
+    print(f'{ru.T_INSIDE_K} = {round(t_inside_k)}')
+    print(f'{ru.T_INSIDE_F} = {round(t_inside_f)}')
+    print(f'{ru.QUANTITY_HEAT} = {round(quantity_heat)}')
+
+
+if __name__ == '__main__':
+    main()
+    
