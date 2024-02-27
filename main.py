@@ -25,7 +25,7 @@ def main():
                  (molar_mass*pressure*volume_m3 - mass_skin*t_outside_k*gas_constant)
     t_inside_c = t_inside_k - 273.15
     t_inside_f = t_outside_c*9/5 + 32
-    mass_air = pressure*molar_mass*volume_m3 / gas_constant*t_outside_k
+    mass_air = (pressure*molar_mass*volume_m3) / (gas_constant*t_outside_k)
     delta_t = t_inside_k - t_outside_k
     quantity_heat = specific_heat * mass_air * delta_t
         
